@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-12">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">WP Events On Actions</h1>
+                <p class="lead text-muted">Setup your actions based on various Wordpress events. You can setup webhooks, post to slack channel, post to Facebook message, to any other system in Json.</p>
+                <p>
+                    <a href="https://wordpress.org/support/plugin/wp-actions-on-events/" class="btn btn-primary my-2" target="_blank">Contact Support</a>
+                    <a href="https://wordpress.org/support/plugin/wp-actions-on-events/reviews/#new-post" class="btn btn-secondary my-2" target="_blank">Rate this plugin!</a>
+                </p>
+                <p>
+                    Or directly write us at <a href="mailto:support@shahariadigital.com">support@shahariadigital.com</a>
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Save email gateway provider configuration -->
+<div class="row">
+    <div class="col-12">
+        <div class="card" id="waoe_provider_configuration">
+            <div class="card-body">
+                <h5 class="card-title">Configure Actions</h5>
+                <p class="card-text">Select event and send data to any specific webhook</p>
+                <div class="row">
+                    <div class="col-6">
+                        <form id="waoe_actions_form">
+                            <div class="form-group">
+                                <label for="event_type_when">When</label>
+                                <select class="form-control" id="event_type_when" name="event_type_when">
+                                    <option value="" selected="selected">Select Event Type</option>
+                                    <option value="someone_publish_post">Someone publish post</option>
+                                </select>
+                            </div>
+                            <div id="event_actions">
+                                <div class="form-group">
+                                    <label for="send_to_webhook">Send to webhook</label>
+                                    <input type="text" name="send_to_webhook" id="send_to_webhook" class="form-control" placeholder="https://your-webookhook-endpoint.com">
+                                </div>
+                            </div>
+                            <!--<div class="row">
+                                <div class="col-12 hidden" id="conditions_builder">
+                                    <h4>Should match</h4>
+                                    <div class="row condition-1">
+                                        <div class="col-4">
+                                            <select class="form-control" name="condition_key[]">
+                                                <option value="" selected="selected">Select Event Type</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <select class="form-control" name="condition_operator[]">
+                                                <option value="" selected="selected">Select conditions</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-control" name="condition_value[]">
+                                                <option value="" selected="selected">Select users</option>
+                                                <option value="shaharia.azam">shaharia.azam</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="javascript:void(0);" class="btn btn-danger btn-sm add_button">+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <button type="button" class="btn btn-primary" id="add_action_btn">Update Action</button>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <!--<h4>Instructions!</h4>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
